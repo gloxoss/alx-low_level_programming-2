@@ -2,7 +2,9 @@
 
 /**
   * _islower - Entry point
-  * Return: 1 when true, 0 when false
+  * Description: if lowercase return 1 else return 0
+  * @c: int
+  * Return: 1 when true and 0 when false
   */
 int _islower(int c)
 {
