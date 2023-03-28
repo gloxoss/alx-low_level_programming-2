@@ -21,6 +21,8 @@ int main(void)
 		printf("%c", r);
 	}
 	printf("%c\n", (2772 - c));
-	fprintf( stderr, "");
+	if (freopen("/dev/null", "w", stderr) == NULL) {
+        // handle error redirecting stderr
+    	}
 	return (0);
 }
