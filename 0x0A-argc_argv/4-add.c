@@ -8,13 +8,13 @@
   */
 int isNum(const char *str)
 {
-    while(*str != '\0')
-    {
-        if(*str < '0' || *str > '9')
-            return (0);
-        str++;
-    }
-    return (1);
+	while (*str != '\0')
+	{
+		if (*str < '0' || *str > '9')
+			return (0);
+		str++;
+	}
+	return (1);
 }
 
 /**
@@ -34,9 +34,7 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-
 		n = strtol(argv[i], NULL, 10);
-		
 		if (n > 0)
 			sum += n;
 	}
