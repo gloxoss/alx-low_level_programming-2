@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	if (remaining < 0)
 	{
-		putchar('\n');
+		printf("0\n");
 		return (0);
 	}
 
