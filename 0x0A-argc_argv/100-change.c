@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 	remaining = atoi(argv[1]);
 
-	if (remaining <= 0)
+	if (remaining < 0)
 	{
 		putchar('\n');
 		return (0);
