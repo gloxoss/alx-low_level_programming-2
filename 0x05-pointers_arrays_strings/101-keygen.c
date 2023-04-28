@@ -3,23 +3,24 @@
 #include <time.h>
 
 /**
-  * main - Entry point
-  * Return: 0
-  */
+ * main - Entry point
+ * Return: int
+ */
 int main(void)
 {
 	int r = 0, c = 0;
 	time_t t;
 
-	srand((unsigned int) time(&t));
+	srand((unsigned int)time(&t));
 	while (c < 2772)
 	{
 		r = rand() % 128;
 		if ((c + r) > 2772)
 			break;
 		c = c + r;
-		printf("%c", (char)r);
+		putchar(r);
 	}
-	printf("%c", (char)(2772 - c));
+	putchar(2772 - c);
+	putchar('\n');
 	return (0);
 }
